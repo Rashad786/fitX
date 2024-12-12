@@ -1,0 +1,166 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://example.com/fitness-bg.jpg'); /* Replace with your fitness background */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+/* Container for the login box */
+.login-container {
+    width: 100%;
+    max-width: 450px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+h2 {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Input field container */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 12px;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group input:focus {
+    border-color: #FF5722; /* Vibrant color */
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 87, 34, 0.6);
+}
+
+input[type="text"], input[type="password"] {
+    font-family: 'Arial', sans-serif;
+    padding-left: 40px; /* Add space for the icon */
+}
+
+.input-group input::placeholder {
+    color: #888;
+}
+
+/* Adding icons to input fields */
+.input-group .icon {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    font-size: 20px;
+    color: #888;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background: linear-gradient(135deg, #FF5722, #FF3D00); /* Gradient for button */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #FF3D00, #FF5722);
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.error-message {
+    color: #f44336;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Link styling */
+p {
+    font-size: 14px;
+    color: #ddd;
+}
+
+a {
+    color: #FF5722;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #FF3D00;
+    text-decoration: underline;
+}
+
+/* Animation for the login box */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .input-group input, button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
